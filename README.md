@@ -29,8 +29,10 @@ The script requires you to enter the FQDN of the ESXi Host, the script initiates
 
 # Using the Script Set
 - Step 1. Download the PTNumaTopology Powershell Module `PTNumaTopology.psd1` by clicking the "Download" button on this page.
+- Step 2. Open PowerCLI session.
+- Step 3. [Connect to VIServer ](https://blogs.vmware.com/PowerCLI/2013/03/back-to-basics-connecting-to-vcenter-or-a-vsphere-host.html)
+- Step 4. Import this module into your environment
 
-Download the PTNumaTopology Powershell Module and import this module into your environment.
 <img src="images/00-Import-Module-Command.png">
 
 In order for the script to work, the Posh-SSH module is necessary. You can download Posh-SSH here and you can install it by running the command: 
