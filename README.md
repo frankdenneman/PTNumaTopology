@@ -39,14 +39,24 @@ The script requires you to enter the FQDN of the ESXi Host, the script initiates
 
 <img src="images/01-Get-Module-Command.png">
 
-- Step 6. Execute Get-PTNumaTopology command and specify the FQDN of the ESXi host. For example: `Get-PTNumaTopology -esxhost sc2esx27.vslab.local`
+- Step 6. Execute Get-PTNumaTopology command and specify the FQDN of the ESXi host. For example: `Get-PTNumaTopology -esxhost sc2esx27.vslab.local`. As the script needs to execute a command on the ESXi host localy an SSH session is initiated. This results in a prompt for a (root) username and password in a separate login screen.
 
 <img src="images/02-Get-PTNumaTopology-Command.png">  
 
-- Step 7. Verify the output of the `Get-PTNumaTopology` Command
+- Step 7. Verify the output of the `Get-PTNumaTopology` command
 
 <img src="images/03-Get-PTNumaTopology-Result.png">  
+
+The output shows the VM first that are not configured with a passthrough device. The script proceeds in displaying the registered virtual machines that do have a passthrough device configured. The output shows the VM Name, the PCIe address of the passthrough device (identical to the UI), the NUMA node the PCI device is connected to, the presence of the VM NUMA Node affinity advanced setting in the VMX and its value and the last column shows the powerstate of the VM.
+
+The script closes the SSH connection while exiting to the commmand-line. If necessary you can set an advanced setting on the  VM specificyin the NUMA affinity of the vCPUs by using the `Set-PTNumaTopology` command.
+
+-Step 1. Execute Set-PTNumaTopology command and specify the FQDN of the ESXi host. For example: `Set-PTNumaTopology -esxhost sc2esx27.vslab.local`.
+
 <img src="images/04-Set-PTNumaTopology-Command.png"> 
+
+
+
 <img src="images/05-Set-PTNumaTopology-Result.png"> 
 <img src="images/06-Verify-SetPTNumaTopology-Command.png">  
 
