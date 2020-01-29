@@ -75,4 +75,5 @@ Once the advanced setting is configurated is show the configured value. To verif
 
 Enjoy the script
 
-Font used in PowerShell environment: JetBrains Mono: https://www.jetbrains.com/lp/mono/#intro
+Font used in PowerShell environment: 
+JetBrains Mono - available at - https://www.jetbrains.com/lp/mono/#intro
