@@ -73,4 +73,6 @@ Once the advanced setting is configurated is show the configured value. To verif
 
 <img src="images/06-Verify-SetPTNumaTopology-Command.png">  
 
+Enjoy the script
+
 Font used in PowerShell environment: JetBrains Mono: https://www.jetbrains.com/lp/mono/#intro
