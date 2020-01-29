@@ -28,17 +28,23 @@ Each script consists of three stages, Host selection & logon, data collection, a
 The script requires you to enter the FQDN of the ESXi Host, the script initiates the SSH session to the host, requiring you to login with the root user account of the host. 
 
 # Using the Script Set
-- Step 1. Download the PTNumaTopology Powershell Module `PTNumaTopology.psd1` by clicking the "Download" button on this page.
+- Step 1. Download the PTNumaTopology Powershell Module `PTNumaTopology.psm1` by clicking the "Download" button on this page.
 - Step 2. Open PowerCLI session.
 - Step 3. [Connect to VIServer ](https://blogs.vmware.com/PowerCLI/2013/03/back-to-basics-connecting-to-vcenter-or-a-vsphere-host.html)
 - Step 4. Import this module into your environment
 
 <img src="images/00-Import-Module-Command.png">
 
-In order for the script to work, the Posh-SSH module is necessary. You can download Posh-SSH here and you can install it by running the command: 
+- Step 5. (Optional) verify if the module has loaded
 
-<img src="images/01-Get-Module-Command.png">  
+<img src="images/01-Get-Module-Command.png">
+
+- Step 6. Execute Get-PTNumaTopology command and specify the FQDN of the ESXi host. For example: `Get-PTNumaTopology -esxhost sc2esx27.vslab.local`
+
 <img src="images/02-Get-PTNumaTopology-Command.png">  
+
+- Step 7. Verify the output of the `Get-PTNumaTopology` Command
+
 <img src="images/03-Get-PTNumaTopology-Result.png">  
 <img src="images/04-Set-PTNumaTopology-Command.png"> 
 <img src="images/05-Set-PTNumaTopology-Result.png"> 
