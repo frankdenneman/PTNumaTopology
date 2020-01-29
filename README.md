@@ -27,7 +27,8 @@ Each script consists of three stages, Host selection & logon, data collection, a
 ### Host Selection & Logon
 The script requires you to enter the FQDN of the ESXi Host, the script initiates the SSH session to the host, requiring you to login with the root user account of the host. 
 
-
+# Using the Script Set
+- Step 1. Download the PTNumaTopology Powershell Module `PTNumaTopology.psd1` by clicking the "Download" button on this page.
 
 Download the PTNumaTopology Powershell Module and import this module into your environment.
 <img src="images/00-Import-Module-Command.png">
