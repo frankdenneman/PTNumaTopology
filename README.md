@@ -1,10 +1,13 @@
+# Abstract
+
 http://www.frankdenneman.nl will feature an extensive write-up soon.
 
-The purpose of this script module is to identify the PCIe Device to NUMA Node locality within a VMware ESXi Host and set the vCPU NUMA affinity accordingly to isolate the vCPU and Memory of the VM in the same domain as the GPU device. This module presents the NUMA topology of a PCI Device that is assigned as a PassThrough device to a virtual machine on the VMware vSphere platform, The Get function retrieves information of registered VMs, PCI-ID of passthrough devices configured, PCI device NUMA node, NUMA Node Affinity VM advanced setting and Powerstate of VM. The Set function provides the ability to set a NUMA Node affinity advanced setting of powered-off VMs
+# The Script Set
+The purpose of this script module is to identify the PCIe Device to NUMA Node locality within a VMware ESXi Host and set the vCPU NUMA affinity accordingly to isolate the vCPU and Memory of the VM in the same domain as the GPU device. This module presents the NUMA topology of a PCI Device that is assigned as a PassThrough (PT) device to a virtual machine on the VMware vSphere platform, The Get function retrieves information of registered VMs, PCI-ID of passthrough devices configured, PCI device NUMA node, NUMA Node Affinity VM advanced setting and Powerstate of VM. The Set function provides the ability to set a NUMA Node affinity advanced setting of powered-off VMs
 
-Please note that get-PTNumaTopology function only collect information and do not alter any configuration in any way possible. The Set-PTNumaTopology function writes the advanced configuration setting "numa.affinity" and a value to the VMX file of a powered-off VM.
+Please note that `Get-PTNumaTopology` function only collect information and do not alter any configuration in any way possible. The `Set-PTNumaTopology` function writes the advanced configuration setting "numa.affinity" and a value to the VMX file of a powered-off VM.
 
-Requirements
+## Requirements
 VMware PowerCLI
 Connection to VMware vCenter
 Unrestricted Script Execution Policy
