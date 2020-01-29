@@ -61,7 +61,7 @@ The script closes the SSH connection while exiting to the commmand-line. If nece
 
 <img src="images/04-Set-PTNumaTopology-Command.png"> 
 
-- Step 2. As a failsafe the script proceeds to ask if you would liek to set the NUMA node affinity of a powered off VM.
+- Step 2. As a failsafe the script proceeds to ask if you would like to set the NUMA node affinity of a powered off VM.
 - Step 3. Provide the name of the powered-off VM.
 - Step 4. The next step is to provide the NUMA Node you want the vCPUs to set the affinity for. Use the same number listed in           the PCI NUMA Node column behind the attached passthrough device.
 
