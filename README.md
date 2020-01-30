@@ -43,7 +43,7 @@ The script requires you to enter the FQDN of the ESXi Host, the script initiates
 
 ## Confirm PassThrough NUMA Topology with Get-PTNumaTopology
 
-- Step 1. Execute Get-PTNumaTopology command and specify the FQDN of the ESXi host. For example: `Get-PTNumaTopology -esxhost sc2esx27.vslab.local`. As the script needs to execute a command on the ESXi host localy an SSH session is initiated. This results in a prompt for a (root) username and password in a separate login screen.
+- Step 1. Execute the Get-PTNumaTopology command and specify the FQDN of the ESXi host. For example: `Get-PTNumaTopology -esxhost sc2esx27.vslab.local`. As the script needs to execute a command on the ESXi host locally an SSH session is initiated. This results in a prompt for a (root) username and password in a separate login screen.
 
 <img src="images/02-Get-PTNumaTopology-Command.png">  
 
