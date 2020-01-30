@@ -69,7 +69,7 @@ The script closes the SSH connection while exiting to the commmand-line. If nece
 
 <img src="images/05-Set-PTNumaTopology-Result.png"> 
 
-Once the advanced setting is configurated is show the configured value. To verify whether the setting matches the NUMA Node of the passthrough device, run the `Get-PTNumaTopology` script again, as it closed the SSH connection after the last run, you are required to log in again with the root user account to retrieve the current settings.
+Once the advanced setting is configurated it shows the configured value. To verify whether the setting matches the NUMA Node of the passthrough device, run the `Get-PTNumaTopology` command again, as it closed the SSH connection after the last run, you are required to log in again with the root user account to retrieve the current settings.
 
 <img src="images/06-Verify-SetPTNumaTopology-Command.png">  
 
